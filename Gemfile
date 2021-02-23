@@ -34,10 +34,7 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
 end
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -48,6 +45,11 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :test do
